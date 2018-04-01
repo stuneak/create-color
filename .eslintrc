@@ -1,0 +1,10 @@
+{
+  "extends": "standard",
+  "env": {
+    "jest": true
+  },
+  "rules": {
+    "semi": 0,
+    "quotes": 0
+  }
+}

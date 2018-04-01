@@ -1,0 +1,44 @@
+{
+  "name": "create-color",
+  "version": "1.0.1",
+  "description":
+    "A tiny (2.2 KB) JavaScript library to generate the permanent color from any string, array or object.",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "hash",
+    "color",
+    "string",
+    "convert",
+    "generate",
+    "create-color",
+    "generate-color",
+    "string-to-color",
+    "stringtocolor",
+    "stringtohash"
+  ],
+  "bugs": {
+    "url": "https://github.com/yakotika/create-color/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yakotika/create-color"
+  },
+  "author": {
+    "email": "yakotikadot@gmail.com",
+    "name": "Abu Shamsutdinov"
+  },
+  "scripts": {
+    "lint": "eslint *.js",
+    "test": "jest --coverage && npm run lint"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^22.4.2"
+  }
+}
