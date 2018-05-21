@@ -1,4 +1,4 @@
-var createColor = require("../");
+var createColor = require("../lib");
 
 test("create color from string [format: default]", function () {
   var defaultColor = createColor("canThereBeAnyText");
@@ -7,7 +7,7 @@ test("create color from string [format: default]", function () {
 
 test("create color from string [format: hsl]", function () {
   var hsl = createColor("canThereBeAnyText", "hsl");
-  expect(hsl).toBe("hsl(290, 93%, 33%)");
+  expect(hsl).toBe("hsl(290,93%,33%)");
 });
 
 test("create color from string [format: hex]", function () {
