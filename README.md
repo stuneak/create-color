@@ -16,7 +16,7 @@ yarn add create-color
 ## Usage
 
 ```js
-const createColor = require("create-color").default;
+const createColor = require("create-color");
 // or
 import createColor from "create-color";
 ```
