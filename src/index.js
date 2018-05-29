@@ -13,27 +13,23 @@ import hashToRgb from "./hashToRgb";
  *
  * @example
  * import createColor from "create-color"
- * const hsl = createColor("canThereBeAnyText", "hsl") //=> "hsl(290, 93%, 33%)"
+ * const hsl = createColor("canThereBeAnyText", "hsl") //=> "hsl(96,71%,46%)"
  *
  * @name createColor
  */
 
 const createColor = (str, format = "hex") => {
-  const getHash = str => {
-    let hash = 0;
-    for (let i = 0; i < str.length; i++) {
-      hash = str.charCodeAt(i) + ((hash << 5) - hash);
-    }
-    return hash;
-  };
+  const getHash = s =>
+    s.split("").reduce((a, _, i) => (a += str.charCodeAt(i) + (a << 5)), 0);
 
   str = String(JSON.stringify(str));
   format = format.toString().toLowerCase();
 
+  const hash = getHash(str);
   const allFormats = {
-    hex: hashToHex(getHash(str)),
-    rgb: hashToRgb(getHash(str)),
-    hsl: hashToHsl(getHash(str))
+    hex: hashToHex(hash),
+    rgb: hashToRgb(hash),
+    hsl: hashToHsl(hash)
   };
 
   if (allFormats[format] === undefined) {

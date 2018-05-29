@@ -30,7 +30,7 @@ const hex = createColor("canThereBeAnyText"); // => "#8906A2"
 // from string
 const hsl = createColor("canThereBeAnyText", "hsl"); // => "hsl(290, 93%, 33%)"
 // from object
-const hex = createColor({ user: "admin", hash: "gtr%$6y4t" }, "hex"); // => "#29F947"
+const hex = createColor({ user: "admin", hash: "gtr%$6y4t" }, "hex"); // => "#ACA21"
 // from array
-const rgb = createColor(["test", "anytext"], "rgb"); // => "rgb(247,151,245)"
+const rgb = createColor(["test", "anytext"], "rgb"); // => "rgb(89,119,249)"
 ```

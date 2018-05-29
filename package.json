@@ -1,6 +1,6 @@
 {
   "name": "create-color",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description":
     "A tiny (2.2 KB) JavaScript library to generate the permanent color from any string, array or object.",
   "main": "lib/index.js",
@@ -35,19 +35,20 @@
     "test": "jest --coverage && npm run lint"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.47",
-    "@babel/core": "^7.0.0-beta.47",
-    "@babel/node": "^7.0.0-beta.47",
-    "@babel/preset-env": "^7.0.0-beta.47",
+    "@babel/cli": "^7.0.0-beta.49",
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/node": "^7.0.0-beta.49",
+    "@babel/preset-env": "^7.0.0-beta.49",
+    "babel-core": "^7.0.0-0",
     "babel-loader": "^8.0.0-beta.3",
     "eslint": "^4.18.2",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.0.1",
-    "jest": "^22.4.2",
-    "rollup": "^0.59.2",
+    "jest": "^23.0.1",
+    "rollup": "^0.59.4",
     "rollup-plugin-babel": "^4.0.0-beta.4",
     "rollup-plugin-uglify": "^4.0.0"
   }
