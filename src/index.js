@@ -19,10 +19,14 @@ import hashToRgb from "./hashToRgb";
  */
 
 const createColor = (str, format = "hex") => {
-  const getHash = s =>
-    s.split("").reduce((a, _, i) => (a += str.charCodeAt(i) + (a << 5)), 0);
+  if (str == null) {
+    throw new TypeError(`[X] You did not specify input parameters`);
+  }
 
-  str = String(JSON.stringify(str));
+  const getHash = s =>
+    s.split("").reduce((a, _, i) => (a += s.charCodeAt(i) + (a << 5)), 0);
+
+  str = JSON.stringify(str);
   format = format.toString().toLowerCase();
 
   const hash = getHash(str);
@@ -33,8 +37,8 @@ const createColor = (str, format = "hex") => {
   };
 
   if (allFormats[format] === undefined) {
-    throw new Error(
-      `Format ${format} was not found. The following formats are available: ${Object.keys(
+    throw new ReferenceError(
+      `[X] Unknown format: ${format}. The following formats are available: ${Object.keys(
         allFormats
       )}`
     );

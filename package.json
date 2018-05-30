@@ -1,6 +1,6 @@
 {
   "name": "create-color",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description":
     "A tiny (2.2 KB) JavaScript library to generate the permanent color from any string, array or object.",
   "main": "lib/index.js",

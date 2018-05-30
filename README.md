@@ -23,12 +23,12 @@ import createColor from "create-color";
 
 ```js
 // format by default: hex
-const hex = createColor("canThereBeAnyText"); // => "#8906A2"
+const hex = createColor("canThereBeAnyText"); // => "#67CB22"
 ```
 
 ```js
 // from string
-const hsl = createColor("canThereBeAnyText", "hsl"); // => "hsl(290, 93%, 33%)"
+const hsl = createColor("canThereBeAnyText", "hsl"); // => "hsl(96,71%,46%)"
 // from object
 const hex = createColor({ user: "admin", hash: "gtr%$6y4t" }, "hex"); // => "#ACA21"
 // from array
