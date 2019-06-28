@@ -18,11 +18,11 @@
     "stringtohash"
   ],
   "bugs": {
-    "url": "https://github.com/yakotika/create-color/issues"
+    "url": "https://github.com/stuneak/create-color/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yakotika/create-color"
+    "url": "https://github.com/stuneak/create-color"
   },
   "author": {
     "email": "stuneak@gmail.com",
