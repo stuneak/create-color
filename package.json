@@ -1,8 +1,7 @@
 {
   "name": "create-color",
-  "version": "1.0.7",
-  "description":
-    "A tiny (2.2 KB) JavaScript library to generate the permanent color from any string, array or object.",
+  "version": "1.0.8",
+  "description": "A tiny (1 KB) JavaScript library to generate the permanent color from any string, array or object.",
   "main": "lib/index.js",
   "module": "src/index.js",
   "license": "MIT",
@@ -26,30 +25,29 @@
     "url": "https://github.com/yakotika/create-color"
   },
   "author": {
-    "email": "yakotikadot@gmail.com",
+    "email": "stuneak@gmail.com",
     "name": "Abu Shamsutdinov"
   },
   "scripts": {
     "build": "rollup -c",
     "lint": "eslint *.js",
-    "test": "jest --coverage && npm run lint"
+    "test": "jest --coverage"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.49",
-    "@babel/core": "^7.0.0-beta.49",
-    "@babel/node": "^7.0.0-beta.49",
-    "@babel/preset-env": "^7.0.0-beta.49",
-    "babel-core": "^7.0.0-0",
-    "babel-loader": "^8.0.0-beta.3",
-    "eslint": "^4.18.2",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.9.0",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "jest": "^23.0.1",
-    "rollup": "^0.59.4",
-    "rollup-plugin-babel": "^4.0.0-beta.4",
-    "rollup-plugin-uglify": "^4.0.0"
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.0.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^24.8.0",
+    "rollup": "^1.16.2",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-uglify": "^6.0.2"
   }
 }

@@ -1,9 +1,8 @@
 # Create color
 
 [![npm version](https://badge.fury.io/js/create-color.svg)](https://badge.fury.io/js/create-color) ![](https://img.shields.io/npm/dm/create-color.svg)
-[![Code Climate](https://codeclimate.com/github/yakotika/create-color.svg)](https://codeclimate.com/github/yakotika/create-color)
 
-A tiny (2.2 KB) JavaScript library to generate the permanent color from any string, array or object.
+A tiny (1 KB) JavaScript library to generate the permanent color from any string, array or object.
 
 ## Install
 

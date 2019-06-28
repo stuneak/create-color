@@ -1,11 +1,5 @@
 var createColor = require("../lib");
 
-const allFormats = {
-  hex: "test",
-  rgb: "test",
-  hsl: "test"
-};
-
 test("create color from string [format: default]", () => {
   var defaultColor = createColor("canThereBeAnyText");
   expect(defaultColor).toBe("#67CB22");
@@ -42,6 +36,7 @@ test("create color from object [format: hex]", () => {
 test('should throw Error with message "[X] Unknown format: errorformat. The following formats are available: hex,rgb,hsl"', () => {
   const format = "errorformat";
   try {
+    // eslint-disable-next-line no-unused-vars
     var testError = createColor(
       { hash: "g443r3+_evr3g", user: "admin" },
       format
@@ -56,6 +51,7 @@ test('should throw Error with message "[X] Unknown format: errorformat. The foll
 
 test('should throw Error with message "[X] You did not specify input parameters"', () => {
   try {
+    // eslint-disable-next-line no-unused-vars
     var testError = createColor();
     expect(true).toBe(false);
   } catch (e) {
