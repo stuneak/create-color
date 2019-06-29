@@ -1,4 +1,4 @@
-const hashToHsl = hash => {
+export const hashToHsl = hash => {
   const r = ((hash & 0xff0000) >> 16) / 255;
   const g = ((hash & 0x00ff00) >> 8) / 255;
   const b = (hash & 0x0000ff) / 255;
@@ -34,5 +34,3 @@ const hashToHsl = hash => {
 
   return `hsl(${h},${s}%,${l}%)`;
 };
-
-export default hashToHsl;

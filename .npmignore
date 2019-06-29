@@ -1,5 +1,4 @@
 .gitignore
-.npmignore
 .editorconfig
 
 node_modules/
@@ -10,4 +9,4 @@ yarn.lock
 package-lock.json
 test/
 coverage/
-
+.DS_Store
