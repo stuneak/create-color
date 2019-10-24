@@ -38,3 +38,4 @@ const hex = createColor(
 // from array
 const rgb = createColor(["random", "color", "generation"], { format: "rgb" }); // => "rgb(218,179,136)"
 ```
+
