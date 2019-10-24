@@ -5,5 +5,4 @@ npm-debug.log
 .idea
 lib/
 yarn-error.log
-package-lock.json
 .DS_Store
