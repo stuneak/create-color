@@ -4,6 +4,8 @@
 
 A tiny (590 B) JavaScript library to generate the permanent color from any string, array or object.
 
+### [DEMO](https://zrizh.csb.app/). Open in  [CodeSandbox](https://codesandbox.io/s/create-color-value-test-zrizh)
+
 ## Install
 
 ```bash
