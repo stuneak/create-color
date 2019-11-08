@@ -11,7 +11,7 @@ export const hashToHsl = hash => {
   if (max === min) {
     h = s = 0;
   } else {
-    var d = max - min;
+    const d = max - min;
     s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
     switch (max) {
       case r: h = (g - b) / d + (g < b ? 6 : 0); break;
