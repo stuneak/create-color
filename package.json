@@ -32,11 +32,11 @@
     "build": "rollup -c",
     "size": "npm run build && npm run test && size-limit",
     "lint": "eslint *.js",
-    "test": "jest"
+    "test": "npm run build && jest"
   },
   "size-limit": [
     {
-      "limit": "590 B",
+      "limit": "565 B",
       "path": "lib/index.js"
     }
   ],
@@ -45,6 +45,7 @@
     "@babel/core": "^7.4.5",
     "@babel/node": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
+    "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "color": "^3.1.2",
     "colorcolor": "^1.1.1",
