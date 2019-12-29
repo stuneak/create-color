@@ -1,6 +1,14 @@
 const createColor = require("../lib");
 const colorTocolor = require("colorcolor");
 
+const errorsMsg = {
+  inputNotFound: `[X] You didn't specify an input parameter for the hash`,
+  errorFormat: (format) => `
+      [X] Unknown format: ${format}. 
+      The following formats are available: ${['hex', 'rgb', 'hsl'].join(",")}
+    `
+};
+
 const generalСonfigurations = {
   str: {
     value: "canThereBeAnyText",
@@ -86,44 +94,38 @@ Object.entries(generalСonfigurations).forEach(([key, parameter]) => {
  *  These are error checking tests
  */
 
-const errorformat = "errorformat";
-const availableFormats = ["hex", "rgb", "hsl"];
-test(`there should be an error with the message: "[X] Unknown format: ${errorformat}. The following formats are available: ${availableFormats.join(
-  ","
-)}`, () => {
+const errorFormat = "errorformat";
+test(`there should be an error with the message: ${errorsMsg.errorFormat(errorFormat)}`, () => {
   try {
     // eslint-disable-next-line no-unused-vars
     const testError = createColor(generalСonfigurations.obj, {
-      format: errorformat
+      format: errorFormat
     });
     expect(true).toBe(false);
   } catch (e) {
-    expect(e.message).toBe(
-      `[X] Unknown format: ${errorformat}. The following formats are available: ${availableFormats.join(
-        ","
-      )}`
-    );
+    expect(e.message).toBe(errorsMsg.errorFormat(errorFormat));
   }
 });
 
-test("there should be an error with the message: `[X] You didn't specify an input parameter for the hash`", () => {
+test(`there should be an error with the message: ${errorsMsg.inputNotFound}`, () => {
   try {
     // eslint-disable-next-line no-unused-vars
     const testError = createColor();
     expect(true).toBe(false);
   } catch (e) {
-    expect(e.message).toBe(
-      `[X] You didn't specify an input parameter for the hash`
-    );
+    expect(e.message).toBe(errorsMsg.inputNotFound);
   }
 });
 
-test("there should be an error with the message: `[X] You didn't specify the format`", () => {
-  try {
-    // eslint-disable-next-line no-unused-vars
-    const testError = createColor(generalСonfigurations.str, {});
-    expect(true).toBe(false);
-  } catch (e) {
-    expect(e.message).toBe(`[X] You didn't specify the format`);
-  }
+[null, '', 0, Symbol, [], {}, true].forEach((item) => {
+  let format = item && item.format;
+  test(`[format: ${item} | typeof : ${typeof item}]. Error with the message: ${errorsMsg.errorFormat(format)}`, () => {
+    try {
+      // eslint-disable-next-line no-unused-vars
+      const testError = createColor(generalСonfigurations.str, item);
+      expect(true).toBe(false);
+    } catch (e) {
+      expect(e.message).toBe(errorsMsg.errorFormat(format));
+    }
+  });
 });
