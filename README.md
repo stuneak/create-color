@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/create-color.svg)](https://badge.fury.io/js/create-color) ![](https://img.shields.io/npm/dm/create-color.svg)
 
-A tiny (565 B) JavaScript library to generate the permanent color from any string, array or object.
+A tiny (565 B) JavaScript library to generate permanent color from any string, array or object.
 
 ### [DEMO](https://zrizh.csb.app/). Open in [CodeSandbox](https://codesandbox.io/s/create-color-value-test-zrizh)
 
