@@ -1,10 +1,10 @@
 declare module "create-color" {
   export interface CreateColorOptions {
-    format: string;
+    format: "hex" | "rgb" | "hsl";
   }
 
   export default function createColor(
-    data: any[],
+    data: any,
     options?: CreateColorOptions
   ): string;
 }
